@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1004140766224",
+    "firebase_url": "https://softwarelabsassignment-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "softwarelabsassignment",
+    "storage_bucket": "softwarelabsassignment.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004140766224:android:2a47df681be3c6be299695",
+        "android_client_info": {
+          "package_name": "com.example.softwarelabs_assignment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgbsQUNHv5u-3km3UMmQ8l2UP4bLI0K10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

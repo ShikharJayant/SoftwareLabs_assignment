@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="my_primary">#0BF3BD</color>
+    <color name="My_secondary">#9e9e9e</color>
+    <color name="my_tertiary"> #e0e0e0</color>
+
+    #eeeeee
+    <color name="btn_color1">#D5715B</color>
+
+
+</resources>

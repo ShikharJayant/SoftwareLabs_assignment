@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SoftwareLabs_assignment</string>
+    <string name="obBoarding_str1">Sell your farm fresh products directly to consumers, cutting out the middleman and reducing the emissions of the global supply chain.</string>
+    <string name="obBoarding_str2">Our team of delivery drivers will make sure your orders are picked up on time and promptly delivered to your customers.</string>
+    <string name="obBoarding_str3">We love the earth and know you do too! Join us in reducing our local carbon footprint one order at a time. </string>
+    <string name="hello">Hello</string>
+    <string name="let_s_start">Welcome!</string>
+    <string name="email_id">Email id</string>
+    <string name="sssss">Hello</string>
+    <string name="ssss">Hello</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="full_name">Full Name</string>
+    <string name="login">Login.</string>
+    <string name="already_have_an_account">Already have an account?  </string>
+    <string name="signup_text1">or signup with</string>
+    <string name="string_verfi">Attached proof of Department of Agriculture registrations i.e. Florida Fresh, USDA Approved, USDA Organic.</string>
+    <string name="tt_ver2">Attach proof of registration</string>
+    <string name="str_hours">Choose the hours your farm is open for pickups. This will allow customers to order deliveries.</string>
+    <string name="m">M</string>
+    <string name="new_here">New here?</string>
+
+
+</resources>

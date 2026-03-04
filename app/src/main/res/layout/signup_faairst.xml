@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+>
+
+    <TextView
+        android:id="@+id/tt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="FarmerEats"
+        android:textColor="@color/black"/>
+
+
+<LinearLayout
+    android:id="@+id/ll1"
+    android:layout_below="@id/tt1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="28dp">
+
+
+    <TextView
+
+        android:id="@+id/text_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup 1 of 4"
+        android:textSize="15sp"
+        android:textColor="@color/My_secondary"
+
+
+        />
+
+    <TextView
+
+        android:id="@+id/text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/let_s_start"
+        android:textSize="38sp"
+        android:textStyle="bold"
+
+        />
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ll1">
+
+
+        <ImageButton
+            android:id="@+id/btn_Google"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/social_bg"
+            android:padding="12dp"
+            android:src="@drawable/ic_google"
+            android:contentDescription = "Google"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/btn_Apple"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/social_bg"
+            android:padding="12dp"
+            android:src="@drawable/ic_apple"
+            android:contentDescription = "Apple"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/btn_Facebook"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/social_bg"
+            android:padding="12dp"
+            android:src="@drawable/ic_facebook"
+            android:contentDescription = "Facebook"
+            android:scaleType="centerInside"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+    android:id="@+id/ll4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ll2"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+
+
+
+        <TextView
+
+            android:id="@+id/text_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll2"
+            android:gravity="center"
+            android:text="@string/signup_text1"
+            android:textSize="10sp"
+            android:textColor="@color/My_secondary"
+
+            />
+
+
+
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:hint="@string/full_name"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:backgroundTint="@color/my_tertiary"
+        android:background="@drawable/rounded_corner"
+        />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/email_id"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:backgroundTint="@color/my_tertiary"
+        android:background="@drawable/rounded_corner"
+        />
+
+
+    <EditText
+        android:id="@+id/et_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+
+        android:hint="@string/phone_number"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:backgroundTint="@color/my_tertiary"
+        android:background="@drawable/rounded_corner"
+        />
+
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/password"
+        android:backgroundTint="@color/my_tertiary"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_corner"
+        />
+
+    <EditText
+        android:id="@+id/et_cpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/confirm_password"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:backgroundTint="@color/my_tertiary"
+        android:background="@drawable/rounded_corner"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_createA"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/btn_color1"
+        android:text="Continue"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+</LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_below="@id/ll4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/btn_color1"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

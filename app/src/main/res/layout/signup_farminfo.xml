@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    >
+
+
+
+
+    <TextView
+        android:id="@+id/tt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="FarmerEats"
+        android:textColor="@color/black" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_below="@id/tt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="28dp">
+
+
+        <TextView
+
+            android:id="@+id/text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signup 2 of 4"
+            android:textSize="15sp"
+            android:textColor="@color/My_secondary"
+
+
+            />
+
+        <TextView
+
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farm Info"
+            android:textSize="38sp"
+            android:textStyle="bold"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+
+
+
+
+        <EditText
+            android:id="@+id/et_businessname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:hint="Business name"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:backgroundTint="@color/my_tertiary"
+            android:background="@drawable/rounded_corner"
+            />
+
+        <EditText
+            android:id="@+id/et_informalname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Informal name"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:backgroundTint="@color/my_tertiary"
+            android:background="@drawable/rounded_corner"
+            />
+
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+
+            android:hint="Street address"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:backgroundTint="@color/my_tertiary"
+            android:background="@drawable/rounded_corner"
+            />
+
+
+
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="City"
+            android:backgroundTint="@color/my_tertiary"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll2"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <!-- Spinner (Left Side) -->
+        <Spinner
+            android:id="@+id/spinner_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/my_tertiary"
+            android:padding="10dp"
+            android:spinnerMode="dropdown"/>
+
+        <!-- Space Between -->
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+
+        <!-- EditText (Right Side) -->
+        <EditText
+            android:id="@+id/et_zipcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Zipcode"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/my_tertiary"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="475dp"
+        android:layout_below="@+id/ll1"
+        android:orientation="horizontal">
+
+        <!-- Back Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Back"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Back"
+            android:backgroundTint="@color/My_secondary"/>
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"/>
+
+        <!-- Continue Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Continue"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Continue"
+            android:backgroundTint="@color/btn_color1"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
