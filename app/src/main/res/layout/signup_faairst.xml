@@ -12,10 +12,27 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
         android:text="FarmerEats"
+        android:textSize="16sp"
         android:textColor="@color/black"/>
 
 
-<LinearLayout
+    <TextView
+        android:id="@+id/txtLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tt1"
+        android:layout_alignParentEnd="true"
+        android:text="Logout"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+
+
+
+    <LinearLayout
     android:id="@+id/ll1"
     android:layout_below="@id/tt1"
     android:layout_width="match_parent"
@@ -30,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Signup 1 of 4"
-        android:textSize="15sp"
+        android:textSize="14sp"
         android:textColor="@color/My_secondary"
 
 
@@ -42,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/let_s_start"
-        android:textSize="38sp"
+        android:textSize="32sp"
         android:textStyle="bold"
 
         />
@@ -57,41 +74,41 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="18dp"
         android:layout_below="@id/ll1">
 
 
         <ImageButton
             android:id="@+id/btn_Google"
-            android:layout_width="48dp"
+            android:layout_width="90dp"
             android:layout_height="48dp"
             android:layout_margin="10dp"
             android:background="@drawable/social_bg"
-            android:padding="12dp"
-            android:src="@drawable/ic_google"
-            android:contentDescription = "Google"
+            android:padding="7dp"
+            android:src="@drawable/ic_googleo"
+            android:contentDescription = "@string/img_btn1"
             android:scaleType="centerInside"/>
 
         <ImageButton
             android:id="@+id/btn_Apple"
-            android:layout_width="48dp"
+            android:layout_width="90dp"
             android:layout_height="48dp"
             android:layout_margin="10dp"
             android:background="@drawable/social_bg"
-            android:padding="12dp"
-            android:src="@drawable/ic_apple"
-            android:contentDescription = "Apple"
+            android:padding="8dp"
+            android:src="@drawable/icn_apple"
+            android:contentDescription = "@string/img_btn2"
             android:scaleType="centerInside"/>
 
         <ImageButton
             android:id="@+id/btn_Facebook"
-            android:layout_width="48dp"
+            android:layout_width="90dp"
             android:layout_height="48dp"
             android:layout_margin="10dp"
             android:background="@drawable/social_bg"
-            android:padding="12dp"
-            android:src="@drawable/ic_facebook"
-            android:contentDescription = "Facebook"
+            android:padding="7dp"
+            android:src="@drawable/icn_fb"
+            android:contentDescription = "@string/img_btn3"
             android:scaleType="centerInside"/>
 
 
@@ -134,7 +151,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
         android:hint="@string/full_name"
-        android:textSize="18sp"
+        android:textSize="17sp"
         android:padding="10dp"
         android:backgroundTint="@color/my_tertiary"
         android:background="@drawable/rounded_corner"
@@ -146,7 +163,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:hint="@string/email_id"
-        android:textSize="18sp"
+        android:inputType="textEmailAddress"
+        android:textSize="17sp"
         android:padding="10dp"
         android:backgroundTint="@color/my_tertiary"
         android:background="@drawable/rounded_corner"
@@ -160,7 +178,9 @@
         android:layout_marginTop="12dp"
 
         android:hint="@string/phone_number"
-        android:textSize="18sp"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textSize="17sp"
         android:padding="10dp"
         android:backgroundTint="@color/my_tertiary"
         android:background="@drawable/rounded_corner"
@@ -174,8 +194,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="20"
         android:backgroundTint="@color/my_tertiary"
-        android:textSize="18sp"
+        android:textSize="17sp"
         android:padding="10dp"
         android:background="@drawable/rounded_corner"
         />
@@ -186,7 +208,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:hint="@string/confirm_password"
-        android:textSize="18sp"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:textSize="17sp"
         android:padding="10dp"
         android:backgroundTint="@color/my_tertiary"
         android:background="@drawable/rounded_corner"
@@ -195,11 +219,11 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bt_createA"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/btn_color1"
         android:text="Continue"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:padding="10dp"/>
 
 </LinearLayout>
@@ -217,6 +241,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/already_have_an_account"
+        android:textSize="14sp"
         android:paddingRight="10dp"/>
 
     <TextView
@@ -224,6 +249,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
+        android:textSize="14sp"
         android:textColor="@color/btn_color1"
         android:textStyle="bold"/>
 

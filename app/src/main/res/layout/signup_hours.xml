@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
         android:text="FarmerEats"
+        android:textSize="16sp"
         android:textColor="@color/black" />
 
 
@@ -29,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Signup 4 of 4"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:textColor="@color/My_secondary" />
 
         <TextView
@@ -37,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Business Hours"
-            android:textSize="38sp"
+            android:textSize="32sp"
             android:textStyle="bold" />
 
 
@@ -73,7 +74,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:layout_margin="4dp"
-            android:backgroundTint="@color/my_tertiary"
+            android:backgroundTint="@color/grey"
             android:text="M"
             android:textSize="12sp"
             android:padding="0dp"/>
@@ -84,6 +85,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:layout_margin="4dp"
+            android:backgroundTint="@color/grey"
             android:text="T"
             android:textSize="12sp"
             android:padding="0dp"/>
@@ -94,6 +96,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:layout_margin="4dp"
+            android:backgroundTint="@color/grey"
             android:text="W"
             android:textSize="12sp"
             android:padding="0dp"/>
@@ -104,6 +107,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:layout_margin="4dp"
+            android:backgroundTint="@color/grey"
             android:text="Th"
             android:textSize="12sp"
             android:padding="0dp"/>
@@ -114,6 +118,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:layout_margin="4dp"
+            android:backgroundTint="@color/grey"
             android:text="F"
             android:textSize="12sp"
             android:padding="0dp"/>
@@ -124,6 +129,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:layout_margin="4dp"
+            android:backgroundTint="@color/grey"
             android:text="S"
             android:textSize="12sp"
             android:padding="0dp"/>
@@ -134,6 +140,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:layout_margin="4dp"
+            android:backgroundTint="@color/grey"
             android:text="Su"
             android:textSize="12sp"
             android:padding="0dp"/>
@@ -156,7 +163,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
             android:text="8:00am - 10:00am"
-            android:backgroundTint="@color/my_tertiary"/>
+            android:backgroundTint="@color/grey"/>
 
         <Button
             android:id="@+id/btn_time2"
@@ -165,7 +172,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
             android:text="10:00am - 1:00pm"
-            android:backgroundTint="@color/my_tertiary"/>
+            android:backgroundTint="@color/grey"/>
 
         <Button
             android:id="@+id/btn_time3"
@@ -174,7 +181,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
             android:text="1:00pm - 4:00pm"
-            android:backgroundTint="@color/my_tertiary"/>
+            android:backgroundTint="@color/grey"/>
 
         <Button
             android:id="@+id/btn_time4"
@@ -183,7 +190,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
             android:text="4:00pm - 7:00pm"
-            android:backgroundTint="@color/my_tertiary"/>
+            android:backgroundTint="@color/grey"/>
 
         <Button
             android:id="@+id/btn_time5"
@@ -192,7 +199,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
             android:text="7:00pm - 10:00pm"
-            android:backgroundTint="@color/my_tertiary"/>
+            android:backgroundTint="@color/grey"/>
 
     </GridLayout>
 
@@ -211,6 +218,7 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:text="Back"
+            android:textSize="18sp"
             android:backgroundTint="@color/My_secondary"/>
 
         <Space
@@ -224,6 +232,7 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:text="Continue"
+            android:textSize="18sp"
             android:backgroundTint="@color/btn_color1"/>
     </LinearLayout>
 

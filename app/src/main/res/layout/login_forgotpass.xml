@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
         android:text="FarmerEats"
+        android:textSize="16sp"
         android:textColor="@color/black"/>
 
 
@@ -31,7 +32,7 @@
             android:layout_height="wrap_content"
             android:text="Forgot Password ?"
 
-            android:textSize="38sp"
+            android:textSize="32sp"
             android:textStyle="bold"
             />
 
@@ -55,6 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Remember your password?"
+            android:textSize="14sp"
             android:textColor="@color/My_secondary"
             android:paddingRight="10dp"/>
 
@@ -63,6 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login"
+            android:textSize="14sp"
             android:textColor="@color/btn_color1"
             android:textStyle="bold"/>
 
@@ -81,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ll2"
         android:orientation="vertical"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="40dp">
 
 
 
@@ -101,15 +104,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:hint="Phone Number"
-            android:textSize="18sp"
+            android:hint="Enter email id"
+            android:textSize="17sp"
             android:padding="10dp"
             android:backgroundTint="@color/my_tertiary"
             android:background="@drawable/rounded_corner"
 
-            android:inputType="phone"
-            android:maxLength="10"
-            android:digits="0123456789"
+            android:inputType="textEmailAddress"
+
             />
 
 
@@ -119,11 +121,11 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_sendcode"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
             android:backgroundTint="@color/btn_color1"
-            android:text="Send Code"
-            android:textSize="20sp"
+            android:text="Submit"
+            android:textSize="18sp"
             android:padding="10dp"/>
 
     </LinearLayout>

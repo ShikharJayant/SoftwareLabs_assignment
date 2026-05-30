@@ -9,13 +9,15 @@ public class SignupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_signup);
 
         String screen = getIntent().getStringExtra("screen");
 
         if ("login".equals(screen)) {
             loadFragment(new LoginFragment1());
-        } else {
+        }
+        else {
             loadFragment(new SignupFragment1()); // default signup
         }
     }

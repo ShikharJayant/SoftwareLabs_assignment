@@ -21,22 +21,8 @@ public class OnboardingFragment3 extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         Button btnStart = view.findViewById(R.id.btnJoin);
-//
-//        btnStart.setOnClickListener(v -> {
-//            Intent intent = new Intent(getActivity(), SignupActivity.class);
-//            startActivity(intent);
-//            requireActivity().finish();
-//        });
-//
 
-        TextView txtLogin = view.findViewById(R.id.txt_Login);
-
-//        txtLogin.setOnClickListener(v -> {
-//            Intent intent = new Intent(requireActivity(), SignupActivity.class);
-//            startActivity(intent);
-//        });
-
-
+        TextView txtLogin = view.findViewById(R.id.txtLogin);
 
         btnStart.setOnClickListener(v -> {
             Intent intent = new Intent(requireActivity(), SignupActivity.class);

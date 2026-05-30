@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -80,53 +81,115 @@ public class SignupFragment5 extends Fragment {
             btnContinue.setEnabled(false);
 
             // Create user
-            auth.createUserWithEmailAndPassword(
-                    signupData.email,
-                    signupData.password
-            ).addOnCompleteListener(task -> {
+//            auth.createUserWithEmailAndPassword(
+//                    signupData.email,
+//                    signupData.password
+//            ).addOnCompleteListener(task -> {
+//
+//                if (task.isSuccessful()) {
+//
+//                    if (auth.getCurrentUser() == null) {
+//                        btnContinue.setEnabled(true);
+//                        Toast.makeText(requireContext(),
+//                                "User creation failed",
+//                                Toast.LENGTH_LONG).show();
+//                        return;
+//                    }
+//
+//                    String userId = auth.getCurrentUser().getUid();
+//
+//                    // Save to Realtime Database
+//                    databaseReference.child(userId)
+//                            .setValue(signupData)
+//                            .addOnSuccessListener(unused -> {
+//
+//                                Toast.makeText(requireContext(),
+//                                        "Signup Successful",
+//                                        Toast.LENGTH_SHORT).show();
+//
+//                                ((SignupActivity) requireActivity())
+//                                        .loadFragment(new SignupFragment6());
+//
+//                            })
+//                            .addOnFailureListener(e -> {
+//                                btnContinue.setEnabled(true);
+//                                Toast.makeText(requireContext(),
+//                                        "Database Error: " + e.getMessage(),
+//                                        Toast.LENGTH_LONG).show();
+//                            });
+//
+//                } else {
+//                    btnContinue.setEnabled(true);
+//                    Toast.makeText(requireContext(),
+//                            "Auth Failed: " +
+//                                    (task.getException() != null ?
+//                                            task.getException().getMessage() :
+//                                            "Unknown error"),
+//                            Toast.LENGTH_LONG).show();
+//                }
+//            });
+//        });
 
-                if (task.isSuccessful()) {
+            FirebaseUser user = auth.getCurrentUser();
 
-                    if (auth.getCurrentUser() == null) {
+            if (user != null) {
+
+                // ✅ Google/Facebook user already authenticated
+                String userId = user.getUid();
+
+                databaseReference.child(userId)
+                        .setValue(signupData)
+                        .addOnSuccessListener(unused -> {
+
+                            Toast.makeText(requireContext(),
+                                    "Signup Completed",
+                                    Toast.LENGTH_SHORT).show();
+
+                            ((SignupActivity) requireActivity())
+                                    .loadFragment(new SignupFragment6());
+                        })
+                        .addOnFailureListener(e -> {
+                            btnContinue.setEnabled(true);
+                            Toast.makeText(requireContext(),
+                                    e.getMessage(),
+                                    Toast.LENGTH_LONG).show();
+                        });
+
+            } else {
+
+                // ✅ Email signup flow
+                auth.createUserWithEmailAndPassword(
+                        signupData.email,
+                        signupData.password
+                ).addOnCompleteListener(task -> {
+
+                    if (task.isSuccessful()) {
+
+                        FirebaseUser newUser = auth.getCurrentUser();
+                        if (newUser == null) return;
+
+                        String userId = newUser.getUid();
+
+                        databaseReference.child(userId)
+                                .setValue(signupData)
+                                .addOnSuccessListener(unused -> {
+
+                                    Toast.makeText(requireContext(),
+                                            "Signup Successful",
+                                            Toast.LENGTH_SHORT).show();
+
+                                    ((SignupActivity) requireActivity())
+                                            .loadFragment(new SignupFragment6());
+                                });
+
+                    } else {
                         btnContinue.setEnabled(true);
                         Toast.makeText(requireContext(),
-                                "User creation failed",
+                                task.getException().getMessage(),
                                 Toast.LENGTH_LONG).show();
-                        return;
                     }
-
-                    String userId = auth.getCurrentUser().getUid();
-
-                    // Save to Realtime Database
-                    databaseReference.child(userId)
-                            .setValue(signupData)
-                            .addOnSuccessListener(unused -> {
-
-                                Toast.makeText(requireContext(),
-                                        "Signup Successful",
-                                        Toast.LENGTH_SHORT).show();
-
-                                ((SignupActivity) requireActivity())
-                                        .loadFragment(new SignupFragment6());
-
-                            })
-                            .addOnFailureListener(e -> {
-                                btnContinue.setEnabled(true);
-                                Toast.makeText(requireContext(),
-                                        "Database Error: " + e.getMessage(),
-                                        Toast.LENGTH_LONG).show();
-                            });
-
-                } else {
-                    btnContinue.setEnabled(true);
-                    Toast.makeText(requireContext(),
-                            "Auth Failed: " +
-                                    (task.getException() != null ?
-                                            task.getException().getMessage() :
-                                            "Unknown error"),
-                            Toast.LENGTH_LONG).show();
-                }
-            });
+                });
+            }
         });
 
         btnBack.setOnClickListener(v ->

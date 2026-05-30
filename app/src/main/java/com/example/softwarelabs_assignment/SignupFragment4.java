@@ -79,12 +79,15 @@ public class SignupFragment4 extends Fragment {
         );
     }
 
+
+
+
     private void setupDayToggle(Button button, String value, SignupData data) {
         button.setOnClickListener(v -> {
             if (data.workingDays.contains(value)) {
                 data.workingDays.remove(value);
                 button.setBackgroundTintList(
-                        ContextCompat.getColorStateList(requireContext(), R.color.my_tertiary)
+                        ContextCompat.getColorStateList(requireContext(), R.color.grey)
                 );
             } else {
                 data.workingDays.add(value);
@@ -95,6 +98,9 @@ public class SignupFragment4 extends Fragment {
         });
     }
 
+
+
+
     private void setupTimeToggle(Button button, SignupData data) {
         button.setOnClickListener(v -> {
             String value = button.getText().toString();
@@ -102,12 +108,12 @@ public class SignupFragment4 extends Fragment {
             if (data.workingHours.contains(value)) {
                 data.workingHours.remove(value);
                 button.setBackgroundTintList(
-                        ContextCompat.getColorStateList(requireContext(), R.color.my_tertiary)
+                        ContextCompat.getColorStateList(requireContext(), R.color.grey)
                 );
             } else {
                 data.workingHours.add(value);
                 button.setBackgroundTintList(
-                        ContextCompat.getColorStateList(requireContext(), R.color.btn_color1)
+                        ContextCompat.getColorStateList(requireContext(), R.color.btn_color2)
                 );
             }
         });

@@ -3,6 +3,13 @@
     <style name="Base.Theme.SoftwareLabs_assignment" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Make status bar white -->
+        <item name="android:statusBarColor">@android:color/white</item>
+
+        <!-- Make icons dark (visible on white) -->
+        <item name="android:windowLightStatusBar">true</item>
+
     </style>
 
     <style name="Theme.SoftwareLabs_assignment" parent="Base.Theme.SoftwareLabs_assignment" />
