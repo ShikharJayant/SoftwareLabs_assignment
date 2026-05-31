@@ -22,12 +22,12 @@
     <string name="new_here">New here?</string>
 
 
-    <string name="facebook_app_id">1266206522307569</string>
-    <string name="fb_login_protocol_scheme">fb1266206522307569</string>
-    <string name="facebook_client_token">cb22336bc8a820095fbb2ae6fda1a6ff</string>
+    <string name="facebook_app_id"></string>
+    <string name="fb_login_protocol_scheme"></string>
+    <string name="facebook_client_token"></string>
 
     //Google web client id
-    <string name="default_web_client_id">1004140766224-jkvoh2l3c112e2s7cdu766kgv6pamve3.apps.googleusercontent.com</string>
+    <string name="default_web_client_id"></string>
     <string name="img_btn1">Google</string>
     <string name="img_btn2">Apple</string>
     <string name="img_btn3">Facebook</string>
